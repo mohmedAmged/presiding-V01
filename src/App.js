@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import MyNavBar from './components/myNavBarSec/MyNavBar';
+import { Route, Routes } from 'react-router-dom';
+import MyHome from './pages/myHomePage/MyHome';
 
 function App() {
+  const [scrollToggle, setScrollToggle] = useState(false);
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      setScrollToggle(true);
+    } else {
+      setScrollToggle(false);
+    }
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+    <MyNavBar scrollToggle={scrollToggle}/>
+    <Routes>
+      <Route path='/' element={<MyHome />} />
+    </Routes>
+   </>
   );
 }
 
