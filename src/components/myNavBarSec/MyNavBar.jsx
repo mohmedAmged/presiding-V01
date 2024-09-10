@@ -31,7 +31,6 @@ export default function MyNavBar({scrollToggle}) {
                     {/* start navbar min-width 992px */}
                     <Navbar.Collapse id="navbar-nav" className='Navbar__Collapse__none__on__med'>
                         <Nav className="mx-auto" >
-
                             <NavLink
                                 onClick={() => {
                                     scrollToTop();

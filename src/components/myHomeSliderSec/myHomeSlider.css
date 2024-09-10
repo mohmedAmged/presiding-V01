@@ -65,4 +65,12 @@
     color: #fff;
     display: flex;
     align-items: center;
+    transition: all ease-in-out .3s;
+}
+.swiper-button-prev-custom:hover,
+.swiper-button-next-custom:hover{
+    opacity: 1;
+}
+.swiper-button-prev-custom{
+    opacity: .6;
 }
