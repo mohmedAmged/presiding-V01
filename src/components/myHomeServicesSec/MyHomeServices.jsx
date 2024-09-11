@@ -6,67 +6,60 @@ import img2 from '../../assets/serviceIcon/Vector (6).png'
 import img3 from '../../assets/serviceIcon/Vector (7).png'
 import img4 from '../../assets/serviceIcon/Vector (8).png'
 export default function MyHomeServices() {
+    const serviceItems = [
+        {
+            servImg: img1,
+            servTit: 'Management',
+            servSubTit: 'Consultancy',
+            servInfo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        },
+        {
+            servImg: img2,
+            servTit: 'Financial',
+            servSubTit: 'Consultancy',
+            servInfo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        },
+        {
+            servImg: img3,
+            servTit: 'Corporate Social',
+            servSubTit: 'Responsibility',
+            servInfo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        },
+        {
+            servImg: img4,
+            servTit: 'Training &',
+            servSubTit: 'Development',
+            servInfo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        },
+    ]
     return (
         <div className='myHomeServices__handler'>
             <div className="container">
-                <MyMainHeader 
-                    secHead='OUR services'
-                    secText='We create solutions that are bold & up with the times' 
-                />
+                <>
+                    <MyMainHeader 
+                        secHead='OUR services'
+                        secText='We create solutions that are bold & up with the times' 
+                    />
+                </>
                 <div className="servicesItem__handler">
                     <div className="row mt-5 mb-3">
-                        <div className="col-lg-3 col-md-3 mb-3">
-                            <div className="serviceItem_box">
-                                <img src={img1} alt="icon-1" />
-                                <div className="serviceItem_info">
-                                    <h3>
-                                        Management Consultancy
-                                    </h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    </p>
+                        {
+                            serviceItems.map((item, index)=>(
+                            <div key={index} className="col-lg-3 col-md-3 mb-5">
+                                <div className="serviceItem_box">
+                                    <img src={item?.servImg} alt={`icon-${index}`} />
+                                    <div className="serviceItem_info">
+                                        <h3>
+                                            {item?.servTit}<br/> {item?.servSubTit}
+                                        </h3>
+                                        <p>
+                                            {item?.servInfo}
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-lg-3 col-md-3 mb-3">
-                            <div className="serviceItem_box">
-                                <img src={img2} alt="icon-1" />
-                                <div className="serviceItem_info">
-                                    <h3>
-                                        Management Consultancy
-                                    </h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-3 mb-3">
-                            <div className="serviceItem_box">
-                                <img src={img3} alt="icon-1" />
-                                <div className="serviceItem_info">
-                                    <h3>
-                                        Management Consultancy
-                                    </h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-3 mb-3">
-                            <div className="serviceItem_box">
-                                <img src={img4} alt="icon-1" />
-                                <div className="serviceItem_info">
-                                    <h3>
-                                        Management Consultancy
-                                    </h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                            ))
+                        }
                     </div>
                 </div>
             </div>

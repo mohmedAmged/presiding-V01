@@ -23,6 +23,17 @@
     font-weight: 400;
     color: rgba(51, 51, 51, 1);
 }
-.serviceItem_box{
-
+@media screen and (max-width:600px) {
+    .myHomeServices__handler
+    {
+        padding-inline-start: 0;
+    }
+    .serviceItem_box{
+        text-align: center;
+    }
+    .serviceItem_box img {
+        margin: 0 auto;
+        width: 42px;
+        height: 42px;
+    }
 }

@@ -11,7 +11,7 @@ export default function MyHomeOverview() {
         <div className='myHomeOverview__handler'>
             <div className='container-fluid'>
                 <div className="row fullOverview_items">
-                    <div className="col-lg-6 col-md-6 mb-4">
+                    <div className="col-lg-6 col-md-6 mb-4 ps-0">
                         <div className="overview_item">
                             <img src={bg1} alt="bg-1" />
                             <div className="overview_info">
@@ -22,14 +22,14 @@ export default function MyHomeOverview() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-6 col-md-6 mb-4">
+                    <div className="col-lg-6 col-md-6 mb-4 ps-0 ">
                         <div className="row">
-                            <div className="col-6 mb-4">
+                            <div className="col-6 mb-sm-4 pe-0">
                                 <div className="overview_item item_small">
                                     <img src={bg2} alt="bg-1" />
                                 </div>
                             </div>
-                            <div className="col-6 mb-4">
+                            <div className="col-6 mb-sm-4  pe-0">
                                 <div className="overview_item item_small">
                                     <div className="overflow"></div>
                                     <img src={bg4} alt="bg-1" />
@@ -43,7 +43,7 @@ export default function MyHomeOverview() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-6">
+                            <div className="col-6 pe-0">
                                 <div className="overview_item item_small">
                                     <div className="overflow bg_color"></div>
                                     <img src={bg3} alt="bg-1" />
@@ -55,7 +55,7 @@ export default function MyHomeOverview() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-6">
+                            <div className="col-6 pe-0">
                                 <div className="overview_item item_small">
                                     <img src={bg5} alt="bg-1" />
                                 </div>
