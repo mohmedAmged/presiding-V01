@@ -67,7 +67,6 @@ export default function MyHomeSlider() {
                     </div>
                 </SwiperSlide>
             </Swiper>
-            {/* Custom Navigation Buttons */}
             <div className="custom-navigation">
                 <div className="swiper-button-prev-custom"><i className="bi bi-arrow-bar-left"></i></div>
                 <div className="swiper-button-next-custom"><i className="bi bi-arrow-bar-right"></i></div>
