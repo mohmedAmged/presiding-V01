@@ -34,6 +34,7 @@
     color: var(--main-dark-blue-color-text);
     text-transform: uppercase;
     margin-right: 10px;
+    font-family: "Montserrat", sans-serif;
 }
 .insighSlide__info .nav-link i{
     font-size: 14px;

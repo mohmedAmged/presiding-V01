@@ -54,7 +54,7 @@ export default function MyHomeInsights() {
                                 className='mySwiper '
                                 modules={[Autoplay, Navigation]}
                                 autoplay={{
-                                    delay: 2500000,
+                                    delay: 2500,
                                     pauseOnMouseEnter: true,
                                     disableOnInteraction: false
                                 }}

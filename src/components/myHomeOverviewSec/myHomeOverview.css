@@ -56,13 +56,16 @@
     text-transform: capitalize;
 }
  @media screen and (max-width: 992px) {
-    .fullOverview_items{
-        /* max-height: 600px; */
-    }
     .overview_item.item_small img{
         height: 283px;
     }
     .overview_item .overview_info{
         padding: 20px;
+    }
+ }
+ @media screen and (max-width: 600px) {
+    .removeMarginRight{
+        margin-inline-end: 0;
+        padding-inline-end: 0;
     }
  }
