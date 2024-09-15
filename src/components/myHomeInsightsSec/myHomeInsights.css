@@ -49,8 +49,8 @@
     margin-bottom: 30px;
     align-items: center;
 }
-.swiper-button-prev-custom,
-.swiper-button-next-custom{
+.insightsSlider__handler .swiper-button-prev-custom,
+.insightsSlider__handler .swiper-button-next-custom{
     color: var(--main-dark-blue-color-text);
 }
 
