@@ -7,6 +7,7 @@ import MyHomeServices from '../../components/myHomeServicesSec/MyHomeServices'
 import MyHomePodacast from '../../components/myHomePodatcastSec/MyHomePodacast'
 import MyHomeOurMission from '../../components/myHomeOurMissionSec/MyHomeOurMission'
 import MyHomeIndustries from '../../components/myHomeIndustriesSec/MyHomeIndustries'
+import MyHomeInsights from '../../components/myHomeInsightsSec/MyHomeInsights'
 export default function MyHome() {
     return (
         <>
@@ -17,6 +18,7 @@ export default function MyHome() {
             <MyHomePodacast />
             <MyHomeOurMission />
             <MyHomeIndustries />
+            <MyHomeInsights />
         </>
     )
 }
