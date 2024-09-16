@@ -15,7 +15,7 @@ export default function MyHomeJobs() {
                     <h3>
                     Always looking for the top talent
                     </h3>
-                    <button>
+                    <button className='gradient_btn'>
                     Find available jobs 
                     <i className="bi bi-arrow-right-short"></i>
                     </button>

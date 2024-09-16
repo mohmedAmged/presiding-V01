@@ -3,6 +3,7 @@ import './App.css';
 import MyNavBar from './components/myNavBarSec/MyNavBar';
 import { Route, Routes } from 'react-router-dom';
 import MyHome from './pages/myHomePage/MyHome';
+import MyFooter from './components/myFooterSec/MyFooter';
 
 function App() {
   const [scrollToggle, setScrollToggle] = useState(false);
@@ -17,9 +18,10 @@ function App() {
   return (
    <>
     <MyNavBar scrollToggle={scrollToggle}/>
-    <Routes>
-      <Route path='/' element={<MyHome />} />
-    </Routes>
+      <Routes>
+        <Route path='/' element={<MyHome />} />
+      </Routes>
+    <MyFooter />
    </>
   );
 }

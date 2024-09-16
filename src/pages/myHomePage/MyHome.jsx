@@ -9,6 +9,7 @@ import MyHomeOurMission from '../../components/myHomeOurMissionSec/MyHomeOurMiss
 import MyHomeIndustries from '../../components/myHomeIndustriesSec/MyHomeIndustries'
 import MyHomeInsights from '../../components/myHomeInsightsSec/MyHomeInsights'
 import MyHomeJobs from '../../components/myHomeJobsSec/MyHomeJobs'
+import MyNewsLetter from '../../components/myNewsLetterSec/MyNewsLetter'
 export default function MyHome() {
     return (
         <>
@@ -21,6 +22,7 @@ export default function MyHome() {
             <MyHomeIndustries />
             <MyHomeInsights />
             <MyHomeJobs />
+            <MyNewsLetter />
         </>
     )
 }
